@@ -16,4 +16,4 @@ You will also need to have software installed to run and execute a [Jupyter Note
 If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. Make sure that you select the Python 2.7 installer and not the Python 3.x installer.
 
 ## License
-The contents of this repository are covered under the [MIT License](https://github.com/TokyoIndex/mldn_titanic_survival_exploration/blob/master/LICENSE).
+The contents of this repository are covered under the [MIT License](https://github.com/TokyoIndex/mlnd_titanic_survival_exploration/blob/master/LICENSE).
