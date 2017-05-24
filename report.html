@@ -13206,6 +13206,10 @@ Make sure to keep track of the various features and conditions you tried before 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer</strong>: Predictions have an accuracy of 80.92%.</p>
+<p>First, there seems to be a distinction between the number of female and male survivors. This became the corner stone of how I split the data. This method was effective since this split yielded a <strong>78.68%</strong> accuracy as seen in <code>predictions_1</code>.</p>
+<p>Next, in <code>predictions_2</code> I split the data by including male passengers under 10 years as survivors, and thus implimenting the old wives tale of "women and children first." Sadly, this only increased the predictive power of the model slightly to <strong>79.35%</strong>.</p>
+<p>Finally, I looked as <em>passenger class</em> as being the next most important feature.  Passenger Class could designate where the passengers were on the ship at the time of the iceburg impact as well as the likelyhood that the passenger could reach the lifeboats before they we exhausted. There were only enough lifeboats for 53% of the passengers (if they were all launched full).</p>
+<p>Therefore, in <code>predictions_3</code> I removed the third class women over 18 from the survivor pool, highlighting the tragedy that wealthier passengers had a higher survival rate due to their station on the ship. I further split the data by including all the children from first and second class as survivors, reguardless of sex.  After accounting for the subset of data which I felt represented the survivors, the remaining passengers were segnmented into the "Not Survived" category.  This split yielded a model with <strong>80.92%</strong> accuracy.</p>
 
 </div>
 </div>
